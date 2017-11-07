@@ -23,10 +23,14 @@ namespace Character
 
         public void CollectCoin(int amount)
         {
-            if (GameManager.gm) // add the points through the game manager, if it is available
+            if (GameManager.gm)
                 GameManager.gm.AddPoints(amount);
-            //else
-            //    PlaySound(coinSFX);
+        }
+
+        public void CollectBulb(int amount)
+        {
+            if (GameManager.gm) 
+                GameManager.gm.AddLight(amount);
         }
 
         private void Awake()

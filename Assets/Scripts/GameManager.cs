@@ -7,11 +7,10 @@ public class GameManager : MonoBehaviour {
     public static GameManager gm;
 
     public int coins = 0;
+    public int brightness = 0;
 
-    // set things up here
     void Awake()
     {
-        // setup reference to game manager
         if (gm == null)
             gm = this.GetComponent<GameManager>();
     }
@@ -19,5 +18,10 @@ public class GameManager : MonoBehaviour {
     public void AddPoints(int amount)
     {
         coins = amount;
+    }
+
+    public void AddLight(int amount)
+    {
+        brightness = amount;
     }
 }
