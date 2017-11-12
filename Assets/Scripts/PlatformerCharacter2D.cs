@@ -33,6 +33,11 @@ namespace Character
                 GameManager.gm.AddLight(amount);
         }
 
+        public void ApplySlopeForce(DirectionType direction, float slope)
+        {
+            Console.WriteLine("Add acceleration");
+        }
+
         private void Awake()
         {
             // Setting up references.
